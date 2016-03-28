@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      <link rel="stylesheet" href="/_lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+      <header>
+        <div id="logo">
+            <a href="/">| Resma | <span>manager</span></a>
+        </div>
+          <div id="auth-wrap">
+              {{#if fname}}<label id="fname">{{fname}}</label>{{/if}}
+              {{#if showLogin}}<a href="/users/login" id="login" class="imp-btn">Login</a>{{/if}}
+          </div>
+      </header>
+
+      <div id="body-container">
+        {{{body}}}
+      </div>
+
+      <!--<footer>-->
+         <!--<ul>-->
+             <!--<li>Breakfast</li>-->
+             <!--<li>Lunch</li>-->
+             <!--<li>Dinner</li>-->
+             <!--<li>Online orders</li>-->
+
+         <!--</ul>-->
+      <!--</footer>-->
+
+      <script src="/_lib/js/jquery-1.11.3.min.js"></script>
+      <script src="/_lib/js/bootstrap.min.js"></script>
+      <script src="/javascripts/script.js"></script>
+  </body>
+</html>

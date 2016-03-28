@@ -1,0 +1,21 @@
+<div id="auth-heading">
+    <h2>Sign in here!</h2>
+    <img src="/images/icons/user.svg" alt="user" id="login-icon-user">
+</div>
+
+<div class="panel-userauth">
+    <form id="form-signin" method="POST" novalidate>
+        <input type="text" name="name" placeholder="Your Name" value="{{input.name}}" required>
+        <input type="email" name="email" placeholder="Email" value="{{input.email}}" required>
+        <select name="usertype" id="usertype" required>
+            <option value="" disabled selected>User Type</option>
+            <option value="Customer">Customer</option>
+            <option value="Waiter">Waiter</option>
+        </select>
+        <input type="text" name="phone" placeholder="Phone(eg. +94(0)#### ### ###" value="{{input.phone}}">
+        <input type="password" name="password" placeholder="Password" value="{{input.password}}" required>
+        <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+        <input type="submit" value="Sign In" class="user-submit">
+    </form>
+    <span style="color: red">{{error}}</span>
+</div>
